@@ -218,7 +218,7 @@ class PushController:
                 start_y = int(outside_y[outside_idx])
 
                 if start_x < 0 or start_x >= W or start_y < 0 or start_y >= H:
-                    print 'out of bound'
+                    print('out of bound')
                     continue
                 if img[start_y, start_x] == 0:
                     break
@@ -327,7 +327,7 @@ class PushController:
         cv2.imshow('action', img_3d)
         if single:
             ## draw the best action
-            print 'press any key to continue ...'
+            print('press any key to continue ...')
             cv2.waitKey(0)
         else:
             ## draw all sample actions
